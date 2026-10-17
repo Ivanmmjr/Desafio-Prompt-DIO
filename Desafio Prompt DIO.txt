@@ -1,0 +1,24 @@
+Atue como um especialista em N8N.
+
+Crie uma automação para processar novas vendas de jogos de videogame, atualizando o estoque, notificando o cliente por e-mail e avisando a equipe de logística.
+
+Público:
+Equipe de E-commerce/Logística e os clientes da loja de jogos.
+
+Ferramentas envolvidas:
+- Webhook / Plataforma de E-commerce
+- Google Sheets
+- Gmail
+- Telegram ou Slack
+
+Fluxo:
+1. O webhook recebe o evento de novo pedido aprovado na loja virtual.
+2. O n8n localiza o jogo na planilha do Google Sheets e desconta 1 unidade do estoque.
+3. O sistema envia um e-mail automático de confirmação e detalhes da compra para o cliente via Gmail.
+4. Uma mensagem de alerta é enviada para o canal da equipe de logística no Telegram/Slack com os dados do pedido.
+
+Regras:
+- O fluxo só deve rodar após a confirmação do pagamento.
+- Se o estoque do jogo estiver zerado, enviar um alerta extra para o gerente.
+
+Explique quais nós do N8N devem ser utilizados e a lógica de funcionamento do workflow.
